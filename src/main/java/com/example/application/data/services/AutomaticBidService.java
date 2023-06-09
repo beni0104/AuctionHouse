@@ -5,7 +5,6 @@ import com.example.application.data.repository.AutomaticBidRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class AutomaticBidService {
@@ -16,8 +15,6 @@ public class AutomaticBidService {
     }
 
     public void save(AutomaticBid automaticBid){automaticBidRepository.save(automaticBid);}
-
-    public void delete(AutomaticBid automaticBid){automaticBidRepository.delete(automaticBid);}
 
     public List<AutomaticBid> findByAuctionId(Long auctionId){return automaticBidRepository.findByAuctionId(auctionId);}
 

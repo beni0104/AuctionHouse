@@ -1,16 +1,10 @@
 package com.example.application.data.entity;
 
-import com.example.application.databaseactions.dbConnect;
-import com.vaadin.flow.component.notification.Notification;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 @Data
 @Builder

@@ -93,7 +93,8 @@ public class AutomaticBidView extends Main implements HasComponents, HasStyle, H
                     max2 = max1;
                     max1 = a.getMaximumPrice();
                     autoBidUSername = a.getUsername();
-                }
+                }else if(max2 < a.getMaximumPrice())
+                    max2 = a.getMaximumPrice();
             }
 
             if(euroField.getValue() < max2){
@@ -111,7 +112,7 @@ public class AutomaticBidView extends Main implements HasComponents, HasStyle, H
                 }
                 else {
                     auction.setLastBidderUsername(securityService.getAuthenticatedUser().getUsername());
-                    auction.setCurrentPrice(euroField.getValue());
+                    auction.setCurrentPrice(auction.getCurrentPrice()*1.01);
                     auctionService.update(auction);
                 }
             }

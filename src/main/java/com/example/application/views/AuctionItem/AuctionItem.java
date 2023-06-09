@@ -22,7 +22,6 @@ import com.vaadin.flow.server.StreamResource;
 import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 import jakarta.annotation.security.PermitAll;
 
-import java.awt.desktop.SystemEventListener;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.time.LocalDate;
@@ -136,7 +135,8 @@ public class AuctionItem extends VerticalLayout implements HasUrlParameter<Strin
                             max2 = max1;
                             max1 = a.getMaximumPrice();
                             autoBidUSername = a.getUsername();
-                        }
+                        }else if(max2 < a.getMaximumPrice())
+                            max2 = a.getMaximumPrice();
                     }
 
                     if(euroField.getValue() < max2){

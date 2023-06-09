@@ -74,8 +74,8 @@ public class SpringEmailService {
         Objects.requireNonNull(recipients);
 
         // load email configuration from properties file
-        String username = "robertvuia83@gmail.com";
-        String password = "lkhzsrzglaklprar";
+        String username = "szekrenyes.beni1@gmail.com";
+        String password = "syfvxarcleidspib";
 
         // configure the connection to the SMTP server
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();

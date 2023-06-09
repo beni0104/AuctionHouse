@@ -38,19 +38,6 @@ public class SecurityConfig extends VaadinWebSecurity {
 
     @Bean
     public UserDetailsService users() {
-/*
-        UserDetails user = User.builder()
-                .username("user")
-                // password = password with this hash, don't tell anybody :-)
-                .password("{noop}password")
-                .roles("USER")
-                .build();
-        UserDetails admin = User.builder()
-                .username("admin")
-                .password("{bcrypt}$2a$10$GRLdNijSQMUvl/au9ofL.eDwmoohzzS7.rmNSJZ.0FxO/BTk76klW")
-                .roles("USER", "ADMIN")
-                .build();
-*/
 
         List<UserDetails> userDetails = new ArrayList<>();
         List<Users> users = userService.findAll();
@@ -67,13 +54,5 @@ public class SecurityConfig extends VaadinWebSecurity {
         }
         return new InMemoryUserDetailsManager(userDetails);
 
-//        UserDetails user = User.withDefaultPasswordEncoder()
-//                .username("user")
-//                .password("password")
-//                .roles("USER")
-//                .build();
-//        JdbcUserDetailsManager users = new JdbcUserDetailsManager(dataSource);
-//        users.createUser(user);
-//        return users;
     }
 }

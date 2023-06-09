@@ -74,7 +74,7 @@ public class FormLayoutColspan extends Div {
                 throw new RuntimeException(e);
             }
         });
-        image.setAcceptedFileTypes(".png", ".jpg");
+        image.setAcceptedFileTypes(".png", ".jpg", ".jpeg");
 
 
         //Date input and validation---------------------------------------------

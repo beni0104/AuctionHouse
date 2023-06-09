@@ -1,23 +1,26 @@
 package com.example.application.views.sendemail;
 
 import com.example.application.views.MainLayout;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.server.VaadinRequest;
 
 import java.io.IOException;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.concurrent.atomic.AtomicReference;
 import com.example.application.data.services.SpringEmailService;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 
 import javax.mail.MessagingException;
+
+
+
+
+//This is only for testing the mail sender -------------------------------------------
+
+
 
 @PageTitle("Send mail")
 @Route(value = "mail", layout = MainLayout.class)

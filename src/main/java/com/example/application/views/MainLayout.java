@@ -12,7 +12,6 @@ import com.example.application.views.auctions.AuctionsView;
 import com.example.application.views.favoriteauctions.FavoriteAuctions;
 import com.example.application.views.wonauctions.WonAuctionsView;
 import com.example.application.views.yourauctions.YourAuctionsView;
-import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.button.Button;
@@ -58,7 +57,7 @@ public class MainLayout extends AppLayout {
         });
 
 
-        addToNavbar(true, toggle, viewTitle, logout);
+        addToNavbar(true, toggle, viewTitle);
     }
 
     private void addDrawerContent() {

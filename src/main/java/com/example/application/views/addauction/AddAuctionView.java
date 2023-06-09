@@ -22,7 +22,6 @@ public class AddAuctionView extends VerticalLayout {
 
         setSpacing(true);
         FormLayoutColspan registrationForm = new FormLayoutColspan(this.auctionRepository, this.securityService);
-        // Center the RegistrationForm
         setHorizontalComponentAlignment(Alignment.CENTER, registrationForm);
 
         add(registrationForm);

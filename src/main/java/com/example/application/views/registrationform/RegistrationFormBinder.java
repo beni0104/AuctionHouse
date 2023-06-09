@@ -1,7 +1,6 @@
 package com.example.application.views.registrationform;
 
 import com.example.application.data.entity.Users;
-import com.example.application.views.registrationform.RegistrationForm;
 import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.notification.NotificationVariant;
 import com.vaadin.flow.data.binder.BeanValidationBinder;

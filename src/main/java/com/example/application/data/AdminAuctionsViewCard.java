@@ -33,7 +33,7 @@ import java.io.InputStream;
 
 public class AdminAuctionsViewCard extends ListItem {
 
-    private AuctionService auctionService;
+    private final AuctionService auctionService;
 
     private Span status;
     private Button accept, reject;

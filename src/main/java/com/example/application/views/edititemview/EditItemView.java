@@ -25,7 +25,6 @@ import jakarta.annotation.security.PermitAll;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.List;
 import java.util.Optional;
 
 @PageTitle("Edit auction item")
@@ -138,8 +137,7 @@ public class EditItemView  extends VerticalLayout implements HasUrlParameter<Str
             dialog.setRejectText("Discard");
             dialog.addRejectListener(event -> {
                 setStatus("Discarded");
-                Notification notification = Notification
-                        .show("Discarded");
+                Notification notification = Notification.show("Discarded");
             });
 
             dialog.setConfirmText("Save");
@@ -155,22 +153,13 @@ public class EditItemView  extends VerticalLayout implements HasUrlParameter<Str
 
                 auctionService.update(auction);
                 setStatus("Submit");
-                Notification notification = Notification
-                        .show("Data saved!");
+                Notification notification = Notification.show("Data saved!");
             });
 
-            //Button button = new Button("Open confirm dialog");
-            //button.addClickListener(event -> {
-            //dialog.open();
-            //status.setVisible(false);
-            //});
 
             dialog.open();
 
-            //layout.add(button, status);
             add(layout);
-
-            // Center the button within the example
 
         });
     }
