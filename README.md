@@ -11,6 +11,7 @@ Database: Postgres
 
 ## Echipa
 Backend: Szekrenyes Benjamin (eu)
+
 Frontend: Vuia Robert
 
 ## Poze
