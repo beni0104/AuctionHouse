@@ -2,6 +2,9 @@
 Website pentru licitarea obiectelor personale.
 
 
+##Descriere
+
+
 ## Technologii utilizate
 Frontend: Vaadin
 
@@ -17,4 +20,4 @@ Backend: Szekrenyes Benjamin (eu)
 Frontend: Vuia Robert
 
 ## Screen record
-
+https://drive.google.com/drive/folders/1iag3Xgrt0IxVB910rBsbNlKMU8IPosVr?usp=sharing
