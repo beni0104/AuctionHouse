@@ -9,11 +9,12 @@ Backend: Spring Boot
 
 Limbaj de programare: Java
 
-Database: Postgres
+Database: Postgres, Docker
 
 ## Echipa
 Backend: Szekrenyes Benjamin (eu)
 
 Frontend: Vuia Robert
 
-## Poze
+## Screen record
+
