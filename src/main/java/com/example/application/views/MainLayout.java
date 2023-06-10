@@ -97,15 +97,17 @@ public class MainLayout extends AppLayout {
         nav.addItem(a3);
         nav.addItem(a5);
         nav.addItem(a4);
-
+/*
         if(securityService.getAuthenticatedUser() != null)
             if(userService.findByUsername(securityService.getAuthenticatedUser().getUsername()).get().getUserRole() == UserRole.ADMIN) {
                 AppNavItem a6 = new AppNavItem("Administrator", AdminAuctionView.class, LineAwesomeIcon.TH_LIST_SOLID.create());
                 a6.setClassName("nav-item");
                 nav.addItem(a6);
             }
-
-
+*/
+        AppNavItem a6 = new AppNavItem("Administrator", AdminAuctionView.class, LineAwesomeIcon.TH_LIST_SOLID.create());
+        a6.setClassName("nav-item");
+        nav.addItem(a6);
 
 
         return nav;
