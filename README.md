@@ -25,5 +25,5 @@ Backend: Szekrenyes Benjamin (eu)
 
 Frontend: Vuia Robert
 
-## Screen record
+## Screen record cu aplicatia
 https://drive.google.com/drive/folders/1iag3Xgrt0IxVB910rBsbNlKMU8IPosVr?usp=sharing
